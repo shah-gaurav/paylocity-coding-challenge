@@ -1,9 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Paylocity.CodingChallenge.Entities;
 using Paylocity.CodingChallenge.Business.Code;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Paylocity.CodingChallenge.Business.Tests
 {
+    [ExcludeFromCodeCoverage]
     [TestClass]
     public class DiscountByNameCalculatorTests
     {

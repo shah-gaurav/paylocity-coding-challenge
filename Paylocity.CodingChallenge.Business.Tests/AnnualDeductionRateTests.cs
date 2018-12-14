@@ -2,9 +2,11 @@
 using Paylocity.CodingChallenge.Entities.Enums;
 using Paylocity.CodingChallenge.Business.Code;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Paylocity.CodingChallenge.Business.Tests
 {
+    [ExcludeFromCodeCoverage]
     [TestClass]
     public class AnnualDeductionRateTests
     {

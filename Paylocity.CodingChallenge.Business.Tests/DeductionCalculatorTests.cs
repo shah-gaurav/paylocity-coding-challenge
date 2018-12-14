@@ -5,10 +5,12 @@ using Paylocity.CodingChallenge.Entities;
 using Paylocity.CodingChallenge.Entities.Enums;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 namespace Paylocity.CodingChallenge.Business.Tests
 {
+    [ExcludeFromCodeCoverage]
     [TestClass]
     public class DeductionCalculatorTests
     {
