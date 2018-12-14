@@ -33,6 +33,16 @@ Included items must then not match any entries in the exclude list to remain inc
               </Exclude>
             </ModulePaths>
 
+            <!-- Match fully qualified names of functions: -->
+            <!-- (Use "\." to delimit namespaces in C# or Visual Basic, "::" in C++.)  -->
+            <Functions>
+              <Exclude>
+                <Function>.*\.Tests\..*</Function>
+                <Function>.*Constants.*</Function>
+                <Function>.*Main.*</Function>
+              </Exclude>
+            </Functions>
+
           </CodeCoverage>
         </Configuration>
       </DataCollector>
