@@ -30,7 +30,6 @@ Included items must then not match any entries in the exclude list to remain inc
             <ModulePaths>
               <Exclude>
                 <ModulePath>.*fakeiteasy.dll</ModulePath>
-                <ModulePath>.*Tests.*</ModulePath>
               </Exclude>
             </ModulePaths>
 
