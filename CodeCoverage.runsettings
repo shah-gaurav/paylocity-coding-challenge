@@ -40,6 +40,9 @@ Included items must then not match any entries in the exclude list to remain inc
                 <Function>.*\.Tests\..*</Function>
                 <Function>.*Constants.*</Function>
                 <Function>.*Main.*</Function>
+                <Function>.*Startup.*</Function>
+                <Function>.*Program.*</Function>
+                <Function>.*ErrorModel.*</Function>
               </Exclude>
             </Functions>
 
