@@ -8,13 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="FakeItEasy" Version="4.9.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
     <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
     <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Paylocity.CodingChallenge.Business\Paylocity.CodingChallenge.Business.csproj" />
+    <ProjectReference Include="..\Paylocity.CodingChallenge.Entities\Paylocity.CodingChallenge.Entities.csproj" />
+    <ProjectReference Include="..\Paylocity.CodingChallenge.Web\Paylocity.CodingChallenge.Web.csproj" />
   </ItemGroup>
 
 </Project>
