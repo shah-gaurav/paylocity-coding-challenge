@@ -75,7 +75,8 @@ In keeping with the [Agile principles](https://www.agilealliance.org/agile101/12
 - Store the calculations done by the system in a data store (relational or non-relational).
 - User interface enhancements like:
 	- Adding client side code to add or remove dependents dynamically on the employee information page.
-	- Showing calcuation results without doing a full page post back.
+	- Showing calcuation results without doing a full page post back.  
+
 Some of these enhancements might change the architecture of the application to be a multi-tiered application with an API and/or a database backend. The current application architecture follows SOLID design principles to allows for such enhancements to be made with ease and in a maintainable way. 
 
 ### Testing
