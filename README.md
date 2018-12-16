@@ -21,8 +21,8 @@ For the purpose of this exercise lets say a meeting was held between the product
 #### User Stories
 ##### Epic and/or Feature
 
-> As an employer 
-> I want to get an estimate of my employees paycheck after benefits deduction 
+> As an employer  
+> I want to get an estimate of my employees paycheck after benefits deduction  
 > So that I can preview the cost and share it with them
 
 ##### User Stories
