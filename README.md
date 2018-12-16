@@ -16,7 +16,7 @@ Please implement a web application based on these assumptions:
 
 ## Solution
 ### Decomposing the Problem
-For the purpose of this exercise lets assume that a meeting was conducted between the product owner and the employers. Out of that meeting the following user stories were created.
+For the purpose of this exercise let's assume that a meeting was conducted between the product owner and the employers. Out of that meeting the following user stories were created.
 #### User Stories
 ##### Epic and/or Feature User Story
 
@@ -68,15 +68,15 @@ This feature user story would then be broken down by the development team into s
 - **Paylocity.CodingChallenge.Web.Tests** (*.NET Core 2.2*) - Contains the unit tests for the services and Razor Pages contained within the Web project. Details about the Razor Pages unit tests are provided in the Unit Testing section below.
 - **Paylocity.CodingChallenge.Web.Tests.Integration** (*.NET Core 2.2*) - Contains the integration tests for testing the web application. Details about these integration tests are provided in the Integration Testing section below.
 
-#### Notable Implemenation/Design Decisions
-In keeping with the [Agile principles](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/) of *working software is the primary measure of progress* and *simplicity is essential*, I have implemented the minimal solution required to satisfy the problem statement and complete the user stories listed above. Once the customer sees the working software they can provide feedback about what other features to implment and their priorites. The following is a potential list of enhancements that the customer can consider for furture releases:
+#### Notable Implementation/Design Decisions
+In keeping with the [Agile principles](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/) of *working software is the primary measure of progress* and *simplicity is essential*, I have implemented the minimal solution required to satisfy the problem statement and complete the user stories listed above. Once the customer sees the working software, they can provide feedback about what other features to implement and their priorities. The following is a potential list of enhancements that the customer can consider for future releases:
 - User authentication and session management for a personalized experience. 
 - Ability for different employers to have different cost of benefits and discount rules (SaaS multi-tenant model).
 - Integrate with other systems to automatically retrieve employee data for calculations.
 - Store the calculations done by the system in a data store (relational or non-relational).
 - User interface enhancements like:
-	- Adding client side code to add or remove dependents dynamically on the employee information page.
-	- Showing calcuation results without doing a full page post back.  
+	- Adding client-side code to add or remove dependents dynamically on the employee information page.
+	- Showing calculation results without doing a full page post back.  
 
 Some of these enhancements might require a change in the architecture of the application to be a multi-tiered application with an API and/or a database backend. The current application architecture follows SOLID design principles to allows for such enhancements to be made with ease and in a maintainable way. 
 
@@ -85,7 +85,7 @@ Some of these enhancements might require a change in the architecture of the app
 The unit tests provided in this example exercise the public interfaces of the various classes to ensure that they provide the functionality that is expected and that they handle invalid data and corner cases correctly. Unit tests for the Razor Pages in this application were developed based on Microsoft guidelines for writing unit tests for Razor Pages in ASP.NET Core available at [https://docs.microsoft.com/en-us/aspnet/core/test/razor-pages-tests?view=aspnetcore-2.2](https://docs.microsoft.com/en-us/aspnet/core/test/razor-pages-tests?view=aspnetcore-2.2).
 
 > **A note about Code Coverage**
-> My goal was to provide 100% unit test code coverage for all the code that I created/wrote. To achieve this goal I excluded all template generated code from being counted towards code coverage by using the *ExcludeFromCodeCoverage* attribute. There is also a *CodeCoverage.RunSettings* file provided in the repository that excludes certain 3rd party assemblies and the unit test projects themselves.
+> My goal was to provide 100% unit test code coverage for all the code that I created/wrote. To achieve this goal, I excluded all template generated code from being counted towards code coverage by using the *ExcludeFromCodeCoverage* attribute. There is also a *CodeCoverage.RunSettings* file provided in the repository that excludes certain 3rd party assemblies and the unit test projects themselves.
 
 #### Integration Testing
 Integration tests exercise the entire application stack to identify integration issues between different layers of the application. Example integration tests provided with this sample were developed based on Microsoft guidelines for writing integration tests for ASP.NET Core applications available at [https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-2.2](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-2.2).
@@ -95,7 +95,7 @@ A manual test plan should be created so that human validation can be performed o
 - Look and feel of the website
 - Spelling and grammatical errors on various pages
 - Error conditions and validation messages are displayed correctly to the user
-- Test happy path to ensure that most major features of the website is not adversely affected by a particular release
+- Test happy path to ensure that most major features of the website are not adversely affected by a release
 
 #### Performance Testing
 A load test plan should be in put in place and executed on each build that is promoted to production. The purpose of this plan is to establish that the baseline performance of the application is within the set guidelines for the product and to make sure that performance is not negatively affected by new features or changes that are implemented in the future.
