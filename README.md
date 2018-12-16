@@ -44,11 +44,6 @@ This feature would then be broken down by the team into smaller user stories. An
 > I want to be able to provide information about the employee and their dependents on a website and see the yearly and monthly paycheck benefits deduction calcuations  
 > So that I can provide these to the employee in a nice format
 
-### Architecture
-#### Class Diagram
-TODO
-#### Notable Implemenation/Design Decisions
-TODO
 ### Implementation
 #### Technologies Used
 
@@ -63,6 +58,9 @@ TODO
 - **Paylocity.CodingChallenge.Web** (*.NET Core 2.2*) - Contains the web interface implementation of the benefits calculator. This project uses ASP.NET Core 2.2 Razor Pages and is not based on the ASP.NET Core MVC pattern. Information about Razor Pages is available at [https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.2&tabs=visual-studio](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.2&tabs=visual-studio).
 - **Paylocity.CodingChallenge.Web.Tests** (*.NET Core 2.2*) - Contains the unit tests to test the services and Razor Pages in the Web project. Details about the Razor Pages unit tests are provided in the Unit Testing section below.
 - **Paylocity.CodingChallenge.Web.Tests.Integration** (*.NET Core 2.2*) - Contains the integration tests for testing the web interface. Details about these integration tests are provided in the Integration Testing section below.
+
+#### Notable Implemenation/Design Decisions
+STILL TO DOCUMENT
 
 ### Testing
 #### Unit Testing
