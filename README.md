@@ -20,30 +20,30 @@ Please implement a web application based on these assumptions:
 For the purpose of this exercise lets say a meeting was held between the product owner and the users/stakeholders and the following user stories was created after the meeting.
 #### User Stories
 ##### Epic and/or Feature
-As an employer
-I want to get an estimate of my employees paycheck after benefits deduction
-So that I can preview the cost and share it with them
+
+> As an employer 
+> I want to get an estimate of my employees paycheck after benefits deduction 
+> So that I can preview the cost and share it with them
 
 ##### User Stories
 This feature would then be broken down by the team into smaller user stories. An example break down can be as follows:
 
-As an employer
-I want to calculate my employee's paycheck after benefits are deducted from them
-So that I provide that information to him/her
-The cost to cover each employee is $1000/year
+> As an employer 
+> I want to calculate my employee's paycheck after benefits are deducted from them 
+> So that I provide that information to him/her The cost to cover each employee is $1000/year
 
-As an employer
-I want to calculate my employee's and their dependents paycheck after benefits deduction
-So that the employee can get a complete picture of what the costs would be to cover their family
-The cost to cover each dependent is #500/year
+> As an employer 
+> I want to calculate my employee's and their dependents paycheck after benefits deduction 
+> So that the employee can get a complete picture of what the costs would be to cover their family 
+> The cost to cover each dependent is #500/year
 
-As an employer
-I want to provide a 10% discount to all employees and their dependents whose name starts with the letter 'A'
-So that our companies business rules are satisfied
+> As an employer 
+> I want to provide a 10% discount to all employees and their dependents whose name starts with the letter 'A' 
+> So that my company's business rules are satisfied
 
-As an employer
-I want to be able to provide information about the employee and their dependents on a website and see the yearly and monthly paycheck benefits deduction calcuations
-So that I can provide these to the employee in a nice format
+> As an employer 
+> I want to be able to provide information about the employee and their dependents on a website and see the yearly and monthly paycheck benefits deduction calcuations 
+> So that I can provide these to the employee in a nice format
 
 ### Architecture
 #### Class Diagram
