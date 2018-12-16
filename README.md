@@ -16,33 +16,34 @@ Please implement a web application based on these assumptions:
 
 ## Solution
 ### Decomposing the Problem
-For the purpose of this exercise lets say a meeting was held between the product owner and the users/stakeholders and the following user stories was created after the meeting.
+For the purpose of this exercise lets assume that a meeting was conducted between the product owner and the users. Out of that meeting the following user stories were created.
 #### User Stories
 ##### Epic and/or Feature
 
 > As an employer  
-> I want to get an estimate of my employees paycheck after benefits deduction  
-> So that I can preview the cost and share it with them
+> I want to receive an estimate of my employee's paycheck after the costs of benefits have been deducted  
+> So that I can preview it and share it with them
 
 ##### User Stories
-This feature would then be broken down by the team into smaller user stories. An example break down can be as follows:
+This feature would then be broken down by the team into smaller user stories that can be completed in a day or two. Here is one such example break down:
 
 > As an employer  
-> I want to calculate my employee's paycheck after benefits are deducted from them  
-> So that I provide that information to him/her The cost to cover each employee is $1000/year
+> I want to calculate my employee's paycheck after the cost of benefits are deducted 
+> So that I provide that information to him/her  
+> The cost to cover each employee is $1000/year
 
 > As an employer  
-> I want to calculate my employee's and their dependents paycheck after benefits deduction  
-> So that the employee can get a complete picture of what the costs would be to cover their family  
-> The cost to cover each dependent is #500/year
+> I want to calculate my employee's paycheck after the costs of benefits for the employee and their dependents are deducted  
+> So that the employee can get a complete picture of what the costs would be to cover their entire family  
+> The cost to cover each dependent (child and potentially spouse) is $500/year
 
 > As an employer  
-> I want to provide a 10% discount to all employees and their dependents whose name starts with the letter 'A'  
+> I want to provide a 10% discount in the cost of benefits to all employees and their dependents whose name starts with the letter 'A'  
 > So that my company's business rules are satisfied
 
 > As an employer  
-> I want to be able to provide information about the employee and their dependents on a website and see the yearly and monthly paycheck benefits deduction calcuations  
-> So that I can provide these to the employee in a nice format
+> I want to provide information about the employee and their dependents on a website and get a report of the yearly and monthly salary with the cost of benefits deduction  
+> So that I can provide these to the employee
 
 ### Implementation
 #### Technologies Used
@@ -50,6 +51,13 @@ This feature would then be broken down by the team into smaller user stories. An
  - Visual Studio 2017 Community Edition
  - .NET Standard 2.0
  - ASP.NET Core 2.2
+
+#### Instructions
+1. Make sure .NET Core 2.2 or higher SDK is installed on your machine using the command 'dotnet --version'
+2. Clone the repository locally using 'git clone https://github.com/shah-gaurav/paylocity-coding-challenge.git'
+3. Navigate to the Paylocity.CodingChallenge.Web folder
+4. Execute command 'dotnet run' to start the website and navigate to the URL provided in the console output in your favorite browser.
+5. To run the unit tests, navigate into the Paylocity.CodingChallenge.Business.Tests, Paylocity.CodingChallenge.Web.Tests, and Paylocity.CodingChallenge.Web.Tests.Integration folders individually and run the 'dotnet test' command.
 
 #### Project Organization
 - **Paylocity.CodingChallenge.Entities** (*.NET Standard 2.0*) - Contains the shared entities and definitions.
@@ -60,7 +68,15 @@ This feature would then be broken down by the team into smaller user stories. An
 - **Paylocity.CodingChallenge.Web.Tests.Integration** (*.NET Core 2.2*) - Contains the integration tests for testing the web interface. Details about these integration tests are provided in the Integration Testing section below.
 
 #### Notable Implemenation/Design Decisions
-STILL TO DOCUMENT
+In keeping with the [Agile principles](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/) of working software is the primary measure of progress and simplicity is essential, I have implemented the minimal solution required to satisfy the problem statement and complete the user stories listed above. Once the customer sees the working software they can provide feedback about what other features to implment and their priorites. The following is a potential list of enhancements that the customer can consider for furture releases:
+- User authentication and session management for a personalized experience. 
+- Ability for different employers to have different deduction costs and discount rules (SaaS multi-tenant model).
+- Integrate with other systems to automatically retrieve employee data for calculations.
+- Store the calculations done by the system in a data store (relational or non-relational).
+- User interface enhancements like:
+	- Adding client side code to add or remove dependents dynamically on the employee information page.
+	- Showing calcuation results without doing a full page post back.
+Some of these enhancements might change the architecture of the application to be a multi-tiered application with an API and/or a database backend. The current application architecture follows SOLID design principles to allows for such enhancements to be made with ease and in a maintainable way. 
 
 ### Testing
 #### Unit Testing
@@ -100,4 +116,4 @@ This website is running on [Azure Web Apps](https://azure.microsoft.com/en-us/se
 Before the solution is deployed to a production environment an APM solution like [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview) should be integrated with it to help with logging, performance monitoring, gaining user insights, and help with finding and fixing issues.
 
 
-> Written with [StackEdit](https://stackedit.io/).
+> Written by [Gaurav Shah](http://www.linkedin.com/in/gaurav-shah-boise).
