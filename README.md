@@ -1,4 +1,3 @@
-
 # Paylocity Coding Challenge
 
 [![Build Status](https://dev.azure.com/shahgaurav/paylocity-coding-challenge/_apis/build/status/paylocity-coding-challenge-ASP.NET%20Core-CI?branchName=master)](https://dev.azure.com/shahgaurav/paylocity-coding-challenge/_build/latest?definitionId=1?branchName=master) [![](https://img.shields.io/azure-devops/tests/shahgaurav/paylocity-coding-challenge/1.svg)](https://dev.azure.com/shahgaurav/paylocity-coding-challenge/_build/latest?definitionId=1?branchName=master) [![](https://img.shields.io/azure-devops/coverage/shahgaurav/paylocity-coding-challenge/1.svg)](https://dev.azure.com/shahgaurav/paylocity-coding-challenge/_build/latest?definitionId=1?branchName=master) [![](https://vsrm.dev.azure.com/shahgaurav/_apis/public/Release/badge/1f45e0ad-55b2-48e6-8f6b-63c5bae1265a/1/1)](https://dev.azure.com/shahgaurav/paylocity-coding-challenge/_release?view=mine&definitionId=1) [![](https://img.shields.io/website-up-down-green-red/https/gaurav-shah-paylocity-coding-challenge.azurewebsites.net.svg?label=Demo%20Website)](https://gaurav-shah-paylocity-coding-challenge.azurewebsites.net)
@@ -58,7 +57,12 @@ TODO
  - ASP.NET Core 2.2
 
 #### Project Organization
-TODO
+- **Paylocity.CodingChallenge.Entities** (*.NET Standard 2.0*) - Contains the shared entities and definitions.
+- **Paylocity.CodingChallenge.Business** (*.NET Standard 2.0*) - Contains the business logic for calculating the benefits deduction. 
+- **Paylocity.CodingChallenge.Busines.Tests** (*.NET Core 2.2*) - Contains the unit tests to test the business logic.
+- **Paylocity.CodingChallenge.Web** (*.NET Core 2.2*) - Contains the web interface implementation of the benefits calculator. This project uses ASP.NET Core 2.2 Razor Pages and is not based on the ASP.NET Core MVC pattern. Information about Razor Pages is available at [https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.2&tabs=visual-studio](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.2&tabs=visual-studio).
+- **Paylocity.CodingChallenge.Web.Tests** (*.NET Core 2.2*) - Contains the unit tests to test the services and Razor Pages in the Web project. Details about the Razor Pages unit tests are provided in the Unit Testing section below.
+- **Paylocity.CodingChallenge.Web.Tests.Integration** (*.NET Core 2.2*) - Contains the integration tests for testing the web interface. Details about these integration tests are provided in the Integration Testing section below.
 
 ### Testing
 #### Unit Testing
